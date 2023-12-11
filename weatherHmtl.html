@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style>
+      body {
+        background-color: #ececec;
+      }
+      .container {
+        max-width: 540px;
+        width: 100%;
+        display: block;
+        margin: 30px auto;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 30px 30px 0 30px;
+      }
+      .logo {
+        width: 115px;
+        height: 50px;
+        margin-bottom: 40px;
+      }
+      .forms {
+        border: none;
+        width: 80%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #f8f4f4;
+        font-size: 18px;
+        letter-spacing: normal;
+      }
+      .search {
+        background-color: #7c73e6;
+
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        margin: 5px;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        transition: all 200ms ease-in-out;
+      }
+      .search:hover {
+        background-color: #c4c1e0;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .part2 {
+        padding: 0px 9px;
+      }
+      li {
+        list-style-type: none;
+        margin: 0px 0px 0px -40px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #99979f66;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      .w {
+        color: #f65282;
+      }
+      .part3 {
+        display: block;
+        margin: 0px 0px 0px 110px;
+        padding: 10px;
+        font-size: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+      }
+      .col {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      p {
+        color: #45454566;
+        padding: 10px;
+        margin: 0px 5px 2px 20px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .temp {
+        color: #f65282;
+      }
+      .max {
+        color: #f65282;
+        opacity: 0.6;
+      }
+      .clouds {
+        color: black;
+        font-weight: bolder;
+        font-size: 30px;
+      }
+      footer {
+        color: #45454566;
+        display: block;
+        margin: 100px auto;
+        padding: 10px 10px 0px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.shecodes.io/" target="_blank" rel="noopener">
+        <img
+          src="https://www.weather.shecodes.io/images/logo.png"
+          alt="sheCodes"
+          class="logo"
+        />
+      </a>
+      <form>
+        <input type="search" placeholder="Enter a city" class="forms" /><input
+          type="submit"
+          value="search"
+          class="search"
+        />
+      </form>
+      <div class="part2">
+        <h1>San <br />Francisco</h1>
+        <ul>
+          <li>
+            <span> Friday 14:46 </span>
+            , few clouds
+          </li>
+          <li>
+            Humidity:<span class="w">77%</span>, Wind:
+            <span class="w">4.63km/h</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="part3">🌥️<span class="temp-"> 10 &deg;</span></div>
+
+      <div class="part4">
+        <div class="col">
+          <p>Fri</p>
+          <p class="clouds">☁️</p>
+          <p>
+            <span class="temp">14&deg;</span> <span class="max">9&deg;</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>Sat</p>
+          <p class="clouds">🌧️</p>
+          <p>
+            <span class="temp">15&deg;</span> <span class="max">12&deg;</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>Sun</p>
+          <p class="clouds">☁️</p>
+          <p>
+            <span class="temp">15&deg;</span> <span class="max">13&deg;</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>Mon</p>
+          <p class="clouds">🌥️</p>
+          <p>
+            <span class="temp">15&deg;</span> <span class="max">12&deg;</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>Tue</p>
+          <p class="clouds">☁️</p>
+          <p>
+            <span class="temp">17&deg;</span> <span class="max">13&deg;</span>
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        This Weather App was coded by Joey and
+        <a href="https://www.shecodes.io/">sheCodes</a>
+        and is
+        <a href="https://github.com/shecodesio/weather"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://shecodes-weather.netlify.app/">hosted on Netifly</a>
+      </footer>
+      <br />
+    </div>
+  </body>
+</html>
